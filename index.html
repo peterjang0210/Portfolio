@@ -9,14 +9,15 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Welcome</title>
 </head>
 
 <body>
-    <section class="home">
+    <section id="home">
         <main class="container">
-            <div class="row align-items-center justify-content">
+            <div class="row">
                 <div class="col homeText">
                     <h1></h1>
                 </div>
@@ -27,12 +28,74 @@
         <button class="portfolioLink"><i class="fas fa-angle-down"></i></button>
     </section>
 
-    <section class="about">
-        testing about
+    <section id="about">
+        <button class="homeLink"><i class="fas fa-times"></i></button>
+        <main class="container">
+            <div class="row">
+                <div class="col-9">
+                    <h2 id="aboutHeader">Hi there! Looking for me?</h2>
+                </div>
+                <div class="col-3">
+                    <img id="pic" src="./20180128_152701.JPG">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-8">
+                    <p>My name is Peter Jang. I currently live in the metro-Atlanta area.</p>
+                    <p>I first learned about the joys of programming in my AP Computer Science class in my sophomore
+                        year where I learned the fundamentals of Java. In my opinion, there is no better feeling than
+                        when a program that was designed from scratch works perfectly without any bugs.</p>
+                    <p>Currently, I am on a gap year after graduating as the valedictorian at North Gwinnett High School
+                        last May. During this gap year, I am taking a full-stack web development coding bootcamp. I hope
+                        to use the skills I have learned through this bootcamp to find an internship opportunity during
+                        my first year of college at Georgia Tech.</p>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Skills</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="cardElement">
+                                <h5>Front End</h5>
+                                <ul>
+                                    <li>HTML/CSS</li>
+                                    <li>Javascript</li>
+                                    <li>jQuery</li>
+                                    <li>React.js</li>
+                                </ul>
+                            </div>
+                            <div class="cardElement">
+                                <h5>Back End</h5>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                    <li>MySQL</li>
+                                    <li>mongoDB</li>
+                                </ul>
+                            </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3>Links</h3>
+                    <div class="links">
+                        <a href="https://github.com/peterjang0210" class="linkItem">Github <i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/peter-yoon-jang/" class="linkItem">LinkedIn <i class="fab fa-linkedin"></i></a>
+                        <a href="./56384733.jpg" class="linkItem">Resume <i class="fas fa-file"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
     </section>
 
-    <section class="portfolio">
-        <button class="homeLink"><i class="fas fa-angle-up"></i></button>    
+    <section id="portfolio">
+        <button class="homeLink"><i class="fas fa-angle-up"></i></button>
         testing portfolio
     </section>
 

@@ -37,3 +37,47 @@ body {
     bottom: 0;
     left: 50%;
 }
+
+#aboutHeader{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-top: 7%;
+}
+
+#pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+p{
+    padding: 5px;
+    margin: 5px;
+}
+
+h4{
+    text-align: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h3{
+    padding: 10px;
+    margin: 10px;
+}
+
+.list-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.linkItem{
+    padding: 10px;
+    margin: 10px;
+}

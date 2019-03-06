@@ -1,6 +1,6 @@
 (function () {
-    $(".about").hide();
-    $(".portfolio").hide();
+    $("#about").hide();
+    $("#portfolio").hide();
 })();
 
 let abort = false;
@@ -8,7 +8,7 @@ let abort = false;
 const renderHome = function () {
     abort = false;
     $("section").hide();
-    $(".home").show();
+    $("#home").show();
 
     $("h1").empty();
     showText("h1", "Hi, I'm Peter. I'm a full-stack web developer.", 0, 100);
@@ -16,13 +16,13 @@ const renderHome = function () {
 
 const renderAbout = function () {
     $("section").hide();
-    $(".about").show();
+    $("#about").show();
     abort = true;
 }
 
 const renderPortfolio = function () {
     $("section").hide();
-    $(".portfolio").show();
+    $("#portfolio").show();
     abort = true;
 }
 
