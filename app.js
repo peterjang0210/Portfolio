@@ -9,7 +9,7 @@ const renderHome = function () {
     abort = false;
     $("#about").addClass("swing-out-left-bck");
     $("#home").removeClass("fade-out");
-    setTimeout(function (){
+    setTimeout(function () {
         $("section").hide();
         $("#home").show();
         $("h1").empty();
@@ -19,7 +19,7 @@ const renderHome = function () {
 
 const renderAbout = function () {
     $("#home").addClass("fade-out");
-    setTimeout(function() {
+    setTimeout(function () {
         $("section").hide();
         $("#about").removeClass("swing-out-left-bck");
         $("#about").show();
@@ -39,10 +39,33 @@ const showText = function (target, message, index, interval) {
         $(target).append(message[index++]);
         setTimeout(function () { showText(target, message, index, interval); }, interval);
     }
-    else{
+    else {
         return;
     }
 }
+
+$('.hwCarousel').flickity({
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    freeScroll: true,
+    groupCells: 3
+});
+
+$('.projectCarousel').flickity({
+    cellAlign: 'center',
+    contain: true,
+    freeScroll: true,
+    wrapAround: true
+});
+
+$('.timeline').flickity({
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    freeScroll: true,
+    groupCells: 3
+});
 
 showText("h1", "Hi, I'm Peter. I'm a full-stack web developer.", 0, 100);
 

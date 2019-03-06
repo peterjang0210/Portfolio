@@ -9,6 +9,7 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Welcome</title>
@@ -29,7 +30,7 @@
     </section>
 
     <section id="about" class="swing-in-left-bck">
-        <button class="homeLink"><i class="fas fa-times"></i></button>
+        <button class="homeLink" id="closeBtn"><i class="fas fa-times"></i></button>
         <main class="container">
             <div class="row">
                 <div class="col-9" class="slide-in-top">
@@ -85,8 +86,10 @@
                 <div class="col">
                     <h3>Links</h3>
                     <div class="links">
-                        <a href="https://github.com/peterjang0210" class="linkItem">Github <i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/peter-yoon-jang/" class="linkItem">LinkedIn <i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/peterjang0210" class="linkItem">Github <i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/peter-yoon-jang/" class="linkItem">LinkedIn <i
+                                class="fab fa-linkedin"></i></a>
                         <a href="./56384733.jpg" class="linkItem">Resume <i class="fas fa-file"></i></a>
                     </div>
                 </div>
@@ -96,11 +99,35 @@
 
     <section id="portfolio">
         <button class="homeLink"><i class="fas fa-angle-up"></i></button>
-        testing portfolio
+        <div class="main-carousel timeline" data-flickity>
+                <div class="carousel-cell3"></div>
+                <div class="carousel-cell3"></div>
+                <div class="carousel-cell3"></div>
+                <div class="carousel-cell3"></div>
+                <div class="carousel-cell3"></div>
+            </div>
+            <hr>
+        <div class="main-carousel hwCarousel" data-flickity>
+            <div class="carousel-cell1"></div>
+            <div class="carousel-cell1"></div>
+            <div class="carousel-cell1"></div>
+            <div class="carousel-cell1"></div>
+            <div class="carousel-cell1"></div>
+            <div class="carousel-cell1"></div>
+            <div class="carousel-cell1"></div>
+        </div>
+        <hr>
+        <div class="main-carousel projectCarousel" data-flickity>
+            <div class="carousel-cell2"></div>
+            <div class="carousel-cell2"></div>
+            <div class="carousel-cell2"></div>
+        </div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./app.js"></script>
 </body>
 

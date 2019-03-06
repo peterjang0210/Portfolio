@@ -82,6 +82,51 @@ h3{
     margin: 10px;
 }
 
+#closeBtn{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.main-carousel{
+    background: #EEE;
+}
+
+.carousel-cell1 {
+    width: 25%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+
+.carousel-cell2 {
+    width: 40%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+
+.carousel-cell3 {
+    width: 25%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+
+.carousel-cell1:before, .carousel-cell2:before, .carousel-cell3:before{
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
 
 .fade-out {
     animation: fade-out 1s ease-out both;
