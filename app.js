@@ -7,17 +7,24 @@ let abort = false;
 
 const renderHome = function () {
     abort = false;
-    $("section").hide();
-    $("#home").show();
-
-    $("h1").empty();
-    showText("h1", "Hi, I'm Peter. I'm a full-stack web developer.", 0, 100);
+    $("#about").addClass("swing-out-left-bck");
+    $("#home").removeClass("fade-out");
+    setTimeout(function (){
+        $("section").hide();
+        $("#home").show();
+        $("h1").empty();
+        showText("h1", "Hi, I'm Peter. I'm a full-stack web developer.", 0, 100);
+    }, 450);
 }
 
 const renderAbout = function () {
-    $("section").hide();
-    $("#about").show();
-    abort = true;
+    $("#home").addClass("fade-out");
+    setTimeout(function() {
+        $("section").hide();
+        $("#about").removeClass("swing-out-left-bck");
+        $("#about").show();
+        abort = true;
+    }, 1000);
 }
 
 const renderPortfolio = function () {
