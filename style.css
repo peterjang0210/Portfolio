@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%
+}
+
+.home{
+    height: 100%;
+    position: relative;
+}
+
+.homeText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aboutLink{
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 0;
+    top: 47%;
+}
+
+.emailLink{
+    position: absolute;
+    transform: rotate(90deg);
+    right: 0;
+    top: 47%;
+}
+
+.portfolioLink{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
