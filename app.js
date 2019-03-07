@@ -44,11 +44,26 @@ const showText = function (target, message, index, interval) {
     }
 }
 
+const renderHWModal = function () {
+    const hwID = $(this).attr("dataHwID");
+    console.log(hwID)
+    $(".modal-body").html(
+        `<div>
+            <h4>${bootcampHWs[hwID].name}</h4>
+            <p>${bootcampHWs[hwID].description}</p>
+            <a href=${bootcampHWs[hwID].deployLink}>Deployed</a>
+            <a href=${bootcampHWs[hwID].githubLink}>Github</a>
+            <image class="modalImage"src=${bootcampHWs[hwID].imageLink}/>
+        </div>`
+    )
+    $("#modal").modal("show");
+}
+
 $('.hwCarousel').flickity({
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
-    freeScroll: true,
+    // freeScroll: true,
     groupCells: 3
 });
 
@@ -69,6 +84,7 @@ $('.timeline').flickity({
 
 showText("h1", "Hi, I'm Peter. I'm a full-stack web developer.", 0, 100);
 
+$("#portfolio").on('click', "#modalTest",renderHWModal);
 $(".homeLink").on('click', renderHome);
 $(".aboutLink").on('click', renderAbout);
 $(".portfolioLink").on("click", renderPortfolio);

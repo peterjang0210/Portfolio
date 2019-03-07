@@ -37,13 +37,13 @@
                     <h2 id="aboutHeader">Hi there! Looking for me?</h2>
                 </div>
                 <div class="col-3">
-                    <img id="pic" src="./20180128_152701.JPG">
+                    <img id="pic" src="./images/20180128_152701.JPG">
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-8">
-                    <p>My name is Peter Jang. I currently live in the metro-Atlanta area.</p>
+                    <p>Hi! My name is Peter Jang. I currently live in the metro-Atlanta area.</p>
                     <p>I first learned about the joys of programming in my AP Computer Science class in my sophomore
                         year where I learned the fundamentals of Java. In my opinion, there is no better feeling than
                         when a program that was designed from scratch works perfectly without any bugs.</p>
@@ -90,7 +90,7 @@
                                 class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/peter-yoon-jang/" class="linkItem">LinkedIn <i
                                 class="fab fa-linkedin"></i></a>
-                        <a href="./56384733.jpg" class="linkItem">Resume <i class="fas fa-file"></i></a>
+                        <a href="./images/56384733.jpg" class="linkItem">Resume <i class="fas fa-file"></i></a>
                     </div>
                 </div>
             </div>
@@ -99,35 +99,66 @@
 
     <section id="portfolio">
         <button class="homeLink"><i class="fas fa-angle-up"></i></button>
-        <div class="main-carousel timeline" data-flickity>
-                <div class="carousel-cell3"></div>
-                <div class="carousel-cell3"></div>
-                <div class="carousel-cell3"></div>
-                <div class="carousel-cell3"></div>
-                <div class="carousel-cell3"></div>
-            </div>
-            <hr>
+        <!-- <div class="main-carousel timeline" data-flickity>
+            <div class="carousel-cell3"></div>
+            <div class="carousel-cell3"></div>
+            <div class="carousel-cell3"></div>
+            <div class="carousel-cell3"></div>
+            <div class="carousel-cell3"></div>
+        </div>
+        <hr>
         <div class="main-carousel hwCarousel" data-flickity>
-            <div class="carousel-cell1"></div>
-            <div class="carousel-cell1"></div>
-            <div class="carousel-cell1"></div>
-            <div class="carousel-cell1"></div>
-            <div class="carousel-cell1"></div>
-            <div class="carousel-cell1"></div>
-            <div class="carousel-cell1"></div>
+            <div class="carousel-cell1" dataHwID="0">
+            </div>
+            <div class="carousel-cell1" dataHwID="1">
+            </div>
+            <div class="carousel-cell1" dataHwID="2">
+            </div>
+            <div class="carousel-cell1" dataHwID="3">
+            </div>
+            <div class="carousel-cell1" dataHwID="4">
+            </div>
+            <div class="carousel-cell1" dataHwID="5">
+            </div>
+            <div class="carousel-cell1" dataHwID="6">
+            </div>
         </div>
         <hr>
         <div class="main-carousel projectCarousel" data-flickity>
+            <div class="carousel-cell2" dataProjectID="0">
+            </div>
             <div class="carousel-cell2"></div>
             <div class="carousel-cell2"></div>
-            <div class="carousel-cell2"></div>
+        </div> -->
+
+        <div class="modal fade role=" dialog" aria-hidden="true" id="modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- append stuff here dynamicallly -->
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
+        <button id="modalTest" dataHwID="0">modalshow</button>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./portfolioModals.js"></script>
     <script src="./app.js"></script>
 </body>
 
