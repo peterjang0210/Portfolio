@@ -111,24 +111,6 @@ h3{
     border-radius: 5px;
 }
 
-.carousel-cell3 {
-    width: 25%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    border-radius: 5px;
-    counter-increment: gallery-cell;
-}
-
-.carousel-cell1:before, .carousel-cell2:before, .carousel-cell3:before{
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
-
 .flickity-page-dots {
     bottom: -22px;
 }
@@ -225,25 +207,7 @@ h3{
       opacity: 1;
     }
   }
-  
-.scale-out-ver-top {
-    animation: scale-out-ver-top 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
 
-@keyframes scale-out-ver-top {
-    0% {
-        transform: scaleY(1);
-        transform-origin: 100% 0%;
-      opacity: 1;
-    }
-    100% {
-        transform: scaleY(0);
-        transform-origin: 100% 0%;
-      opacity: 1;
-    }
-}
-  
-  
 .bounce-in-top {
     animation: bounce-in-top 1.1s both;
 }

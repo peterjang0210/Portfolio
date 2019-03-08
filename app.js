@@ -35,6 +35,19 @@ const renderPortfolio = function () {
         $("section").hide();
         $("#portfolio").removeClass("scale-out-center");
         $("#portfolio").show();
+        $('.hwCarousel').flickity({
+            cellAlign: 'center',
+            contain: true,
+            wrapAround: true,
+            freeScroll: true
+        });
+        
+        $('.projectCarousel').flickity({
+            cellAlign: 'center',
+            contain: true,
+            freeScroll: true,
+            wrapAround: true
+        });
         $(".carousel-cell-imageHW").hover(changeImageEnterHW, changeImageExitHW);
         $(".carousel-cell-imageProj").hover(changeImageEnterProj, changeImageExitProj);
     }, 1000);
@@ -58,7 +71,7 @@ const renderHWModal = function () {
     $(".modal-body").html(
         `<div>
             <p>${bootcampHWs[hwID - 1].description}</p>
-            <a href=${bootcampHWs[hwID - 1].deployLink}>Deployed</a>
+            <a href=${bootcampHWs[hwID - 1].deployLink}>Deployed</a> | 
             <a href=${bootcampHWs[hwID - 1].githubLink}>Github</a>
         </div>`
     );
@@ -71,7 +84,7 @@ const renderProjectModal = function () {
     $(".modal-body").html(
         `<div>
             <p>${bootcampProjects[projectID - 1].description}</p>
-            <a href=${bootcampProjects[projectID - 1].deployLink}>Deployed</a>
+            <a href=${bootcampProjects[projectID - 1].deployLink}>Deployed</a> | 
             <a href=${bootcampProjects[projectID - 1].githubLink}>Github</a>
         </div>`
     );
@@ -127,28 +140,6 @@ const changeImageEnterProj = function (){
     $(`.projImage${$(this).attr("dataProjectID")}`).attr("src", `./images/bootcampproject${$(this).attr("dataProjectID")}.png`);
     $(`.projImage${$(this).attr("dataProjectID")}`).addClass("fade-in-fwd");
 }
-
-$('.hwCarousel').flickity({
-    cellAlign: 'center',
-    contain: true,
-    wrapAround: true,
-    freeScroll: true
-});
-
-$('.projectCarousel').flickity({
-    cellAlign: 'center',
-    contain: true,
-    freeScroll: true,
-    wrapAround: true
-});
-
-$('.timeline').flickity({
-    cellAlign: 'center',
-    contain: true,
-    wrapAround: true,
-    freeScroll: true,
-    groupCells: 3
-});
 
 showText("h1", "Hi, I'm Peter. I'm a full-stack web developer.", 0, 100);
 
