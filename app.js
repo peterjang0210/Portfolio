@@ -8,7 +8,9 @@ let abort = false;
 const renderHome = function () {
     abort = false;
     $("#about").addClass("swing-out-left-bck");
+    $("#portfolio").addClass("scale-out-center");
     $("#home").removeClass("fade-out");
+    $("#home").removeClass("slide-out-top");
     setTimeout(function () {
         $("section").hide();
         $("#home").show();
@@ -18,6 +20,7 @@ const renderHome = function () {
 }
 
 const renderAbout = function () {
+    
     $("#home").addClass("fade-out");
     setTimeout(function () {
         $("section").hide();
@@ -28,11 +31,15 @@ const renderAbout = function () {
 }
 
 const renderPortfolio = function () {
-    $("section").hide();
-    $("#portfolio").show();
-    $(".carousel-cell-imageHW").hover(changeImageEnterHW, changeImageExitHW);
-    $(".carousel-cell-imageProj").hover(changeImageEnterProj, changeImageExitProj);
-    abort = true;
+    $("#home").addClass("slide-out-top");
+    setTimeout(function () {
+        $("section").hide();
+        $("#portfolio").removeClass("scale-out-center");
+        $("#portfolio").show();
+        $(".carousel-cell-imageHW").hover(changeImageEnterHW, changeImageExitHW);
+        $(".carousel-cell-imageProj").hover(changeImageEnterProj, changeImageExitProj);
+        abort = true;
+    }, 1000);
 }
 
 // function to display text letter by letter
