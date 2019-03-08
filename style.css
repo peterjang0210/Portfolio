@@ -92,22 +92,18 @@ h3{
     background: #EEE;
 }
 
-.carousel-cell1 {
+.carousel-cell-imageHW{
     width: 25%;
-    height: 200px;
+    height: 250px;
     margin-right: 10px;
-    background: #8C8;
     border-radius: 5px;
-    counter-increment: gallery-cell;
 }
 
-.carousel-cell2 {
+.carousel-cell-imageProj {
     width: 40%;
-    height: 200px;
+    height: 250px;
     margin-right: 10px;
-    background: #8C8;
     border-radius: 5px;
-    counter-increment: gallery-cell;
 }
 
 .carousel-cell3 {
@@ -179,3 +175,18 @@ h3{
         opacity: 0;
     }
   }
+
+  .fade-in-fwd {
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+  @keyframes fade-in-fwd {
+    0% {
+      transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
