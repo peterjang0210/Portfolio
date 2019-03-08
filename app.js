@@ -1,6 +1,6 @@
 (function () {
-    $("#about").hide();
-    $("#portfolio").hide();
+    $("section").hide();
+    $("#home").show();
 })();
 
 let abort = false;
@@ -8,6 +8,7 @@ let abort = false;
 const renderHome = function () {
     abort = false;
     $("#about").addClass("swing-out-left-bck");
+    $("#home").addClass("scale-up-center");
     $("#portfolio").addClass("scale-out-center");
     $("#home").removeClass("fade-out");
     setTimeout(function () {
@@ -19,6 +20,7 @@ const renderHome = function () {
 }
 
 const renderAbout = function () {
+    $("#home").removeClass("scale-up-center");
     $("#home").addClass("fade-out");
     abort = true;
     setTimeout(function () {
@@ -29,6 +31,7 @@ const renderAbout = function () {
 }
 
 const renderPortfolio = function () {
+    $("#home").removeClass("scale-up-center");
     $("#home").addClass("fade-out");
     abort = true;
     setTimeout(function () {

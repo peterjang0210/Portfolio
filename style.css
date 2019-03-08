@@ -4,9 +4,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.home{
+#home{
+    background-image: url("./images/pexels-photo-247676.jpeg");
+    background-position: center;
     height: 100%;
-    position: relative;
 }
 
 .homeText{
@@ -23,20 +24,51 @@ body {
     position: absolute;
     transform: rotate(-90deg);
     left: 0;
-    top: 47%;
+    top: 48%;
+    color: #c5c6c7;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.aboutLink:hover{
+    cursor: pointer;
+    color: #45a29e;
 }
 
 .emailLink{
     position: absolute;
     transform: rotate(90deg);
     right: 0;
-    top: 47%;
+    top: 49%;
+    color: #c5c6c7;  
+    font-size: 20px; 
+}
+
+.emailLink:hover{
+    text-decoration: none;
+    color: #45a29e;
 }
 
 .portfolioLink{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 48.2%;
+    background-color: transparent;
+    color: #c5c6c7;
+    border: none;
+    font-size: 45px;
+}
+
+.portfolioLink:hover{
+    cursor: pointer;
+    color: #45a29e;
+}
+
+#about, #portfolio{
+    background-color: #1f2833;
+    color: #c5c6c7;
+    height: 100%;
 }
 
 #aboutHeader{
@@ -45,9 +77,36 @@ body {
     padding-top: 7%;
 }
 
+.card{
+    color: #1f2833;
+    background-color: #c5c6c7;
+}
+
+li{
+    margin-left: -20px;
+}
+
+hr{
+    background-color: #c5c6c7;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+.portfolioH3{
+    padding-top: 50px;
+}
+
 .portfolioH3, h1{
     font-size: 30px;
     font-weight: bold;
+}
+
+h1{
+    color: #c5c6c7;
 }
 
 #pic{
@@ -55,6 +114,7 @@ body {
     width: 200px;
     border-radius: 50%;
     transform: rotate(90deg);
+    margin-top: 20px;
 }
 
 p{
@@ -74,7 +134,8 @@ h4{
 
 h3{
     padding: 10px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .list-group{
@@ -85,12 +146,39 @@ h3{
 .linkItem{
     padding: 10px;
     margin: 10px;
+    background-color: transparent;
+    color: #c5c6c7;
+    font-size: 20px;
+}
+
+.linkItem:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #45a29e;
+}
+
+.contact{
+    font-size: 20px;
+    color: #c5c6c7;
+}
+
+.contact:hover{
+    color: #45a29e;
 }
 
 #closeBtn{
     position: fixed;
     top: 0;
-    right: 0;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    color: #c5c6c7;
+    font-size: 30px;
+}
+
+#closeBtn:hover{
+    cursor: pointer;
+    color: #45a29e;
 }
 
 .main-carousel{
@@ -122,12 +210,12 @@ h3{
     border-radius: 0;
 }
 
-.flickity-button {
-    background: transparent;
+.flickity-button, .flickity-button:hover {
+    background: #1f2833;
 }
 
 .flickity-button-icon {
-    fill: white;
+    fill: #c5c6c7;
 }
 
 .modalImage{
@@ -139,7 +227,15 @@ h3{
     position: fixed;
     top: 0;
     left: 48%;
-    margin-top: -10px
+    background-color: transparent;
+    color: #c5c6c7;
+    border: none;
+    font-size: 40px;
+}
+
+#backToHomeBtn:hover{
+    cursor: pointer;
+    color: #45a29e;
 }
 
 /* ********************
@@ -261,6 +357,19 @@ h3{
     100% {
         transform: scale(0);
       opacity: 1;
+    }
+  }
+  
+.scale-up-center {
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
     }
   }
   

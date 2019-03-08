@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section id="home">
+    <section id="home" class="scale-up-center">
         <main class="container">
             <div class="row">
                 <div class="col homeText">
@@ -92,8 +92,8 @@
                         <a href="https://www.linkedin.com/in/peter-yoon-jang/" class="linkItem">LinkedIn <i
                                 class="fab fa-linkedin"></i></a>
                         <a href="./images/56384733.jpg" class="linkItem">Resume <i class="fas fa-file"></i></a>
-                        <span>Contact Me:</span> <a href="tel:+12673467700"><i class="fas fa-phone"></i></a> | <a
-                            href="mailto:peter.jang@outlook.com"><i class="fas fa-envelope"></i></a>
+                        <span>Contact Me:   </span>   <a href="tel:+12673467700"><i class="fas fa-phone contact"></i></a>  |  <a
+                            href="mailto:peter.jang@outlook.com"><i class="fas fa-envelope contact"></i></a>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
 
     <section id="portfolio" class="bounce-in-top">
         <button class="homeLink" id="backToHomeBtn"><i class="fas fa-angle-up"></i></button>
-        <h3 class="portfolioH3">Bootcamp Homework Assignments</h3>
+        <h3 class="portfolioH3">Bootcamp HW Assignments</h3>
         <div class="carousel hwCarousel">
             <img class="carousel-cell-imageHW hwImage1"
                 src="./images/stack-letters-letter-handwriting-family-letters-51191.jpeg" dataHwID="1" />
@@ -113,7 +113,7 @@
             <img class="carousel-cell-imageHW hwImage6" src="./images/pexels-photo-907607.png" dataHwID="6" />
             <img class="carousel-cell-imageHW hwImage7" src="./images/smilies-bank-sit-rest-160739.jpeg" dataHwID="7" />
         </div>
-        <h3 class="portfolioH3">Bootcamp Projects</h3>
+        <h3 class="portfolioH3">Projects</h3>
         <div class="carousel projectCarousel">
             <img class="carousel-cell-imageProj projImage1" src="./images/pexels-photo-1021876.jpeg"
                 dataProjectID="1" />
@@ -121,6 +121,22 @@
             <img class="carousel-cell-imageProj projImage3" src="./images/workInProgress.jpeg" dataProjectID="3" />
         </div>
     </section>
+
+    <div class="modal fade"role="dialog" aria-hidden="true" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- append stuff here dynamicallly -->
+                    </div>
+                </div>
+            </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -134,20 +150,6 @@
     <script src="./portfolioModals.js"></script>
     <script src="./app.js"></script>
 </body>
-<div class="modal fade role=" dialog" aria-hidden="true" id="modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!-- append stuff here dynamicallly -->
-            </div>
-        </div>
-    </div>
-</div>
+
 
 </html>
