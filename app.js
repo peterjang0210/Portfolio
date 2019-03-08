@@ -10,7 +10,6 @@ const renderHome = function () {
     $("#about").addClass("swing-out-left-bck");
     $("#portfolio").addClass("scale-out-center");
     $("#home").removeClass("fade-out");
-    $("#home").removeClass("slide-out-top");
     setTimeout(function () {
         $("section").hide();
         $("#home").show();
@@ -20,25 +19,24 @@ const renderHome = function () {
 }
 
 const renderAbout = function () {
-    
     $("#home").addClass("fade-out");
+    abort = true;
     setTimeout(function () {
         $("section").hide();
         $("#about").removeClass("swing-out-left-bck");
         $("#about").show();
-        abort = true;
     }, 1000);
 }
 
 const renderPortfolio = function () {
-    $("#home").addClass("slide-out-top");
+    $("#home").addClass("fade-out");
+    abort = true;
     setTimeout(function () {
         $("section").hide();
         $("#portfolio").removeClass("scale-out-center");
         $("#portfolio").show();
         $(".carousel-cell-imageHW").hover(changeImageEnterHW, changeImageExitHW);
         $(".carousel-cell-imageProj").hover(changeImageEnterProj, changeImageExitProj);
-        abort = true;
     }, 1000);
 }
 
