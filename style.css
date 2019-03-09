@@ -218,9 +218,28 @@ h3{
     fill: #c5c6c7;
 }
 
-.modalImage{
-    width: 800px;
-    height: 400px;
+.modal-content{
+    background-color: #1f2833;
+    color: #c5c6c7;
+}
+
+.modalLink{
+    margin: 10px;
+    color: #c5c6c7;
+}
+
+.modalLink:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #45a29e;
+}
+
+.close{
+    color: #c5c6c7;
+}
+
+.close:hover{
+    color: #45a29e;
 }
 
 #backToHomeBtn{

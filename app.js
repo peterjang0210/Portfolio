@@ -74,8 +74,8 @@ const renderHWModal = function () {
     $(".modal-body").html(
         `<div>
             <p>${bootcampHWs[hwID - 1].description}</p>
-            <a href=${bootcampHWs[hwID - 1].deployLink}>Deployed</a> | 
-            <a href=${bootcampHWs[hwID - 1].githubLink}>Github</a>
+            <a class="modalLink" href=${bootcampHWs[hwID - 1].deployLink}>Deployed</a> | 
+            <a class="modalLink" href=${bootcampHWs[hwID - 1].githubLink}>Github</a>
         </div>`
     );
     $("#modal").modal("show");
@@ -87,8 +87,8 @@ const renderProjectModal = function () {
     $(".modal-body").html(
         `<div>
             <p>${bootcampProjects[projectID - 1].description}</p>
-            <a href=${bootcampProjects[projectID - 1].deployLink}>Deployed</a> | 
-            <a href=${bootcampProjects[projectID - 1].githubLink}>Github</a>
+            <a class="modalLink" href=${bootcampProjects[projectID - 1].deployLink}>Deployed</a> | 
+            <a class="modalLink" href=${bootcampProjects[projectID - 1].githubLink}>Github</a>
         </div>`
     );
     $("#modal").modal("show");
