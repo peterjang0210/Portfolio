@@ -457,10 +457,6 @@ h3{
           padding-bottom: 200px;
       }
 
-      .portfolioLink{
-        left: 46%;
-    }
-
       #aboutHeader{
         font-size: 30px;
         word-break: break-word;
@@ -476,10 +472,6 @@ h3{
     #closeBtn{
         font-size: 20px;
         z-index: 1;
-    }
-
-    #backToHomeBtn{
-        left: 45%;
     }
 
     h3{
@@ -517,7 +509,6 @@ h3{
     }
 
     .portfolioLink{
-        left: 43.5%;
         font-size: 40px;
     }
 
