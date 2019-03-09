@@ -53,7 +53,6 @@ body {
 .portfolioLink{
     position: absolute;
     bottom: 0;
-    left: 48.2%;
     background-color: transparent;
     color: #c5c6c7;
     border: none;
@@ -475,7 +474,7 @@ h3{
     }
 
     .portfolioLink{
-        left: 44%;
+        left: 45%;
     }
 
     h3{
