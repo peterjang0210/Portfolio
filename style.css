@@ -69,6 +69,7 @@ body {
     background-color: #1f2833;
     color: #c5c6c7;
     height: 100%;
+    overflow: auto;
 }
 
 #aboutHeader{
@@ -391,4 +392,146 @@ h3{
         transform: scale(1);
     }
   }
-  
+
+  @media only screen and (max-width: 780px){
+    .carousel-cell-imageHW{
+        width: 50%;
+    }
+    
+    .carousel-cell-imageProj {
+        width: 70%;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+
+    .portfolioLink{
+        left: 47%;
+    }
+
+    #aboutHeader{
+        font-size: 30px;
+    }
+
+    #pic{
+        height: 140px;
+        width: 140px;
+    }
+
+    .col-8{
+        flex: none;
+        max-width: none;
+    }
+
+    .col-4{
+        flex: none;
+        margin-left: 10%;
+        max-width: 80%;
+    }
+
+    h3, .portfolioH3{
+        font-size: 20px;
+    }
+    
+    .linkItem{
+        font-size: 15px;
+    }
+
+    span, .contact{
+        font-size: 15px;
+    }
+    
+    #about{
+        overflow: auto;
+    }
+
+    .modalLink{
+        color: #45a29e;
+    }
+  }
+
+  @media only screen and (max-width: 425px){
+      h1{
+          text-align: center;
+          padding-bottom: 200px;
+      }
+
+      .portfolioLink{
+        left: 46%;
+    }
+
+      #aboutHeader{
+        font-size: 30px;
+        word-break: break-word;
+    }
+
+    #pic{
+        height: 100px;
+        width: 100px;
+        margin-left: -40px;
+        z-index: 0;
+    }
+
+    #closeBtn{
+        font-size: 20px;
+        z-index: 1;
+    }
+
+    #backToHomeBtn{
+        left: 45%;
+    }
+
+    h3{
+        margin-bottom: 5px;
+    }
+
+    span{
+        padding-left: 20px;
+    }
+
+    hr{
+        margin-bottom: 15px;
+    }
+
+    .carousel-cell-imageHW{
+        width: 80%;
+    }
+    
+    .carousel-cell-imageProj {
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 350px){
+    .carousel-cell-imageHW{
+        width: 100%;
+    }
+    
+    .carousel-cell-imageProj {
+        width: 100%;
+    }
+
+    .aboutLink, .emailLink{
+        font-size: 15px;
+    }
+
+    .portfolioLink{
+        left: 43.5%;
+        font-size: 40px;
+    }
+
+    #pic{
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+    
+    .col-4{
+        max-width: 95%;
+        margin-left: 2.5%;
+    }
+
+    span{
+        padding-left: 14px;
+    }
+  }
