@@ -65,5 +65,13 @@ const bootcampProjects = [
         deployLink: "https://peterjang0210.github.io/Music-Search-App",
         githubLink: "https://github.com/peterjang0210/Music-Search-App",
         imageLink: "./images/bootcampproject1.png"
+    },
+    {
+        name: "Bootcamp Connect",
+        description: "Full-stack MERN Application that allows users to register/login, update their own profile information, view other users' profiles, and create posts",
+        technologies: ["React", "MongoDB", "Mongoose"],
+        deployLink: "https://bootcamp-connect.herokuapp.com",
+        githubLink: "https://github.com/peterjang0210/bootcamp-connect",
+        imageLink: "./images/bootcampproject2.png"
     }
 ]

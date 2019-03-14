@@ -132,7 +132,7 @@ const changeImageExitProj = function () {
         $(`.projImage${projID}`).attr("src", "./images/pexels-photo-1021876.jpeg");
     }
     else if(projID == 2){
-        $(`.projImage${projID}`).attr("src", "./images/workInProgress.jpeg");
+        $(`.projImage${projID}`).attr("src", "./images/bccLogo.png");
     }
     else if(projID == 3){
         $(`.projImage${projID}`).attr("src", "./images/workInProgress.jpeg");
