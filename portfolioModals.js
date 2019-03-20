@@ -62,8 +62,8 @@ const bootcampProjects = [
         name: "Muugle",
         description: "Front end web app that uses multiple APIs, including spotifyAPI to allow the user to play songs, create playlists, edit playlists, and view information about the song.",
         technologies: ["CSS", "Javascript", "jQuery"],
-        deployLink: "https://peterjang0210.github.io/Music-Search-App",
-        githubLink: "https://github.com/peterjang0210/Music-Search-App",
+        deployLink: "https://peterjang0210.github.io/Muugle",
+        githubLink: "https://github.com/peterjang0210/Muugle",
         imageLink: "./images/bootcampproject1.png"
     },
     {
