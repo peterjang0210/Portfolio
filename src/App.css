@@ -1,0 +1,20 @@
+.Typist {
+  text-align: center;
+}
+
+.skillsBtn {
+  float: right;
+}
+
+.cardHeadText {
+  margin-top: 5px;
+}
+
+.skillListItem {
+  text-align: center;
+}
+
+.carouselImage{
+  width: 100%;
+  margin: 0 auto;
+}
