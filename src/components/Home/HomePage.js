@@ -7,6 +7,7 @@ const HomePage = function(props) {
     <main>
         <Link to="/about" className="aboutLink">About</Link>
         <Link to="/portfolio" className="portfolioLink"><i className="fas fa-chevron-down"></i></Link>
+        <a className="emailLink" href="mailto:peter.jang@outlook.com">Email</a>
       <Typist
         avgTypingDelay={90}
         cursor={{ hideWhenDone: true, hideWhenDoneDelay: 0 }}
