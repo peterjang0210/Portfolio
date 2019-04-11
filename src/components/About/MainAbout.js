@@ -62,7 +62,7 @@ const MainAbout = function(props) {
               <CardBody>
                 <Row>
                   <Col md={{ size: 6 }}>
-                    <ListGroup flush>
+                    <ListGroup flush className="fade-in-fwd">
                       <ListGroupItem className="skillListItem">
                         HTML
                       </ListGroupItem>
@@ -75,7 +75,7 @@ const MainAbout = function(props) {
                     </ListGroup>
                   </Col>
                   <Col md={{ size: 6 }}>
-                    <ListGroup flush>
+                    <ListGroup flush className="fade-in-fwd">
                       <ListGroupItem className="skillListItem">
                         Javascript
                       </ListGroupItem>
@@ -106,26 +106,26 @@ const MainAbout = function(props) {
                 <Row>
                   <Col md={{ size: 6 }}>
                     <ListGroup flush>
-                      <ListGroupItem className="skillListItem">
+                      <ListGroupItem className="skillListItem fade-in-fwd">
                         Node.js
                       </ListGroupItem>
-                      <ListGroupItem className="skillListItem">
+                      <ListGroupItem className="skillListItem fade-in-fwd">
                         Express.js
                       </ListGroupItem>
-                      <ListGroupItem className="skillListItem">
+                      <ListGroupItem className="skillListItem fade-in-fwd">
                         MySQL
                       </ListGroupItem>
                     </ListGroup>
                   </Col>
                   <Col md={{ size: 6 }}>
                     <ListGroup flush>
-                      <ListGroupItem className="skillListItem">
+                      <ListGroupItem className="skillListItem fade-in-fwd">
                         MongoDB
                       </ListGroupItem>
-                      <ListGroupItem className="skillListItem">
+                      <ListGroupItem className="skillListItem fade-in-fwd">
                         Sequelize
                       </ListGroupItem>
-                      <ListGroupItem className="skillListItem">
+                      <ListGroupItem className="skillListItem fade-in-fwd">
                         Mongoose
                       </ListGroupItem>
                     </ListGroup>

@@ -4,7 +4,7 @@ import PortfolioCarousel from "./PortfolioCarousel";
 
 const PortfolioPage = function(props) {
   return (
-    <main>
+    <main className="swing-in-top-bck">
         <Link to="/" className="backToHomeBtn"><i className="fas fa-chevron-up"></i></Link>
         <PortfolioCarousel />
     </main>
