@@ -81,7 +81,8 @@ class PortfolioCarousel extends React.Component {
       projectTitle: items[0].title,
       projectDescription: items[0].description,
       githubLink: items[0].githubLink,
-      deployedLink: items[0].deployedLink
+      deployedLink: items[0].deployedLink,
+      projectChallenge: items[0].challenge
     });
   }
 
@@ -120,7 +121,7 @@ class PortfolioCarousel extends React.Component {
             className="carouselImage"
             onClick={this.toggle}
           />
-          <CarouselCaption captionHeader={item.caption} />
+          <CarouselCaption captionHeader={item.caption} captionText={""}/>
         </CarouselItem>
       );
     });
@@ -128,7 +129,8 @@ class PortfolioCarousel extends React.Component {
     return (
       <Container>
         <header>
-          <h2>Featured Projects</h2>
+          <h2 className="projectHeader">Featured Projects</h2>
+          <hr/>
         </header>
         <Carousel
           activeIndex={activeIndex}
@@ -154,12 +156,13 @@ class PortfolioCarousel extends React.Component {
             onClickHandler={this.next}
           />
         </Carousel>
+        <hr/>
         <div>
-          <h3>{this.state.projectTitle}</h3>
+          <h3 className="projectTitle">{this.state.projectTitle}</h3>
           <p>{this.state.projectDescription}</p>
           <p>{this.state.projectChallenge}</p>
-          <a href={this.state.githubLink}>Github Repository</a>{" | "}
-          <a href={this.state.deployedLink}>Deployed App</a>
+          <a href={this.state.githubLink} className="projectLinks">Github <i className="fab fa-github" /></a>{" | "}
+          <a href={this.state.deployedLink} className="projectLinks">Deployed <i className="fas fa-mobile"></i></a>
         </div>
       </Container>
     );
