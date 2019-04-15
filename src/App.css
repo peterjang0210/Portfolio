@@ -6,10 +6,7 @@ main {
   font-family: "Montserrat", sans-serif;
 }
 
-.Typist {
-  background-color: #1f2833;
-  color: #c5c6c7;
-  font-size: 30px;
+.logo {
   position: fixed;
   top: 50%;
   left: 50%;
