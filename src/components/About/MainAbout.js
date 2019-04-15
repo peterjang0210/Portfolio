@@ -16,26 +16,34 @@ const MainAbout = function(props) {
 
   return (
     <Container>
+      <hr/>
       <Row>
         <Col md={{ size: 8 }}>
           <p>
             Hi! My name is Peter Jang. I currently live in the metro-Atlanta
-            area.
+            area. I graduated from high school this past May as the
+            valedictorian of my class. I am currently on a gap year and will
+            enroll at Georgia Tech in the Fall with the major of Computer
+            Science.
           </p>
           <p>
-            I first learned about the joys of programming in my AP Computer
-            Science class during my sophomore year in high school where I
-            learned the fundamentals of Java. In my opinion, there is no better
-            feeling than when a program is successfully deployed without any
-            bugs (or additional "features").
+            As a full-stack web developer, I enjoy finding effective solutions
+            to problems using code. With my background as valedictorian during
+            high school and my passion for problem solving, I am confident in my
+            ability to bring dedication and energy to any project. I’ve found
+            that going through the entire process of designing and developing
+            web applications to solve a common problem gives me great
+            satisfaction and fulfillment.
           </p>
           <p>
-            Currently, I am on a gap year after graduating as the valedictorian
-            at North Gwinnett High School last May. During this gap year, I am
-            taking a full-stack web development coding bootcamp. I hope to use
-            the skills I have learned through this bootcamp to find an
-            internship opportunity during my first year of college at Georgia
-            Tech.
+            Being able to work effectively individually and as part of a team is
+            a skill that I am proud to be capable of. I am always eager to learn
+            new languages/frameworks/etc to find a more effective solution.
+            During my coding bootcamp at Georgia Tech, I was able to learn the
+            necessary tools for full-stack web development, including jQuery,
+            React, Node, MySQL/Sequelize, MongoDB/Mongoose. I am looking to
+            utilize these skills to continue growing as a developer through
+            building practical applications as well as classroom experience.
           </p>
         </Col>
         <Col md={{ size: 4 }}>
@@ -54,17 +62,29 @@ const MainAbout = function(props) {
               <CardBody>
                 <Row>
                   <Col md={{ size: 6 }}>
-                    <ListGroup flush>
-                      <ListGroupItem className="skillListItem">HTML</ListGroupItem>
-                      <ListGroupItem className="skillListItem">CSS</ListGroupItem>
-                      <ListGroupItem className="skillListItem">Bootstrap</ListGroupItem>
+                    <ListGroup flush className="fade-in-fwd">
+                      <ListGroupItem className="skillListItem">
+                        HTML
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem">
+                        CSS
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem">
+                        Bootstrap
+                      </ListGroupItem>
                     </ListGroup>
                   </Col>
                   <Col md={{ size: 6 }}>
-                    <ListGroup flush>
-                      <ListGroupItem className="skillListItem">Javascript</ListGroupItem>
-                      <ListGroupItem className="skillListItem">jQuery</ListGroupItem>
-                      <ListGroupItem className="skillListItem">React</ListGroupItem>
+                    <ListGroup flush className="fade-in-fwd">
+                      <ListGroupItem className="skillListItem">
+                        Javascript
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem">
+                        jQuery
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem">
+                        React
+                      </ListGroupItem>
                     </ListGroup>
                   </Col>
                 </Row>
@@ -79,23 +99,35 @@ const MainAbout = function(props) {
                   onClick={() => setDisplayFront(!displayFront)}
                   className="skillsBtn"
                 >
-                  View Backend
+                  View Frontend
                 </Button>
               </CardHeader>
               <CardBody>
-              <Row>
+                <Row>
                   <Col md={{ size: 6 }}>
                     <ListGroup flush>
-                      <ListGroupItem className="skillListItem">Node.js</ListGroupItem>
-                      <ListGroupItem className="skillListItem">Express</ListGroupItem>
-                      <ListGroupItem className="skillListItem">MySQL</ListGroupItem>
+                      <ListGroupItem className="skillListItem fade-in-fwd">
+                        Node.js
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem fade-in-fwd">
+                        Express.js
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem fade-in-fwd">
+                        MySQL
+                      </ListGroupItem>
                     </ListGroup>
                   </Col>
                   <Col md={{ size: 6 }}>
                     <ListGroup flush>
-                      <ListGroupItem className="skillListItem">MongoDB</ListGroupItem>
-                      <ListGroupItem className="skillListItem">Sequelize</ListGroupItem>
-                      <ListGroupItem className="skillListItem">Mongoose</ListGroupItem>
+                      <ListGroupItem className="skillListItem fade-in-fwd">
+                        MongoDB
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem fade-in-fwd">
+                        Sequelize
+                      </ListGroupItem>
+                      <ListGroupItem className="skillListItem fade-in-fwd">
+                        Mongoose
+                      </ListGroupItem>
                     </ListGroup>
                   </Col>
                 </Row>
@@ -104,6 +136,7 @@ const MainAbout = function(props) {
           )}
         </Col>
       </Row>
+      <hr/>
     </Container>
   );
 };

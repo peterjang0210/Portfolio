@@ -19,12 +19,12 @@ const Links = props => (
           <a href="./images/56384733.jpg" className="linkItem">
             Resume <i className="fas fa-file" />
           </a>
-          <span>Contact Me: </span>
-          <a href="tel:+12673467700">
+          <span className="contactMe">Contact Me: </span>
+          <a href="tel:+12673467700" className="linkItem">
             <i className="fas fa-phone contact" />
           </a>
-          |
-          <a href="mailto:peter.jang@outlook.com">
+          |{" "}
+          <a href="mailto:peter.jang@outlook.com" className="linkItem">
             <i className="fas fa-envelope contact" />
           </a>
         </div>

@@ -6,12 +6,10 @@ import { Link } from "react-router-dom";
 
 const AboutPage = function(props) {
   return (
-      <main>
-          <Link to="/"><i className="fas fa-times"></i></Link>
+      <main className="swing-in-right-fwd">
+          <Link to="/" className="closeBtn"><i className="fas fa-times"></i></Link>
           <Header />
-          <hr/>
           <MainAbout />
-          <hr/>
           <Links />
       </main>
   )
