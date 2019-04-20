@@ -7,11 +7,13 @@ import {
   CarouselCaption,
   Container
 } from "reactstrap";
+import MuugleDemo from "../../images/Muugle.mp4";
+import BootcampConnectDemo from "../../images/BootcampConnect.mp4";
+import FrontDorDemo from "../../images/FrontDor.mp4";
 
 const items = [
   {
-    src:
-      "https://media.giphy.com/media/IzRV6cXW7M0TwNantE/giphy.gif",
+    src: MuugleDemo,
     altText: "Muugle",
     title: "Muugle",
     description: "Muugle was the first project that I worked on during the coding bootcamp at Georgia Tech. It is a front end application that takes advantage of the Spotify API and two other APIs to provide the user with a one stop shop for listening to music, curating playlists, and viewing song information/lyrics. It was built using Bootstrap as the framework and jQuery the library of choice for DOM manipulation. The application also uses cookies to store recently played songs locally.",
@@ -20,8 +22,7 @@ const items = [
     deployedLink: "https://peterjang0210.github.io/Muugle/"
   },
   {
-    src:
-      "https://media.giphy.com/media/hqlVVrDykJLh0ZCJeN/giphy.gif",
+    src: BootcampConnectDemo,
     altText: "Bootcamp Connect",
     title: "Bootcamp Connect",
     description: "This is a full-stack MERN (MongoDB, Express.js, React, Node) application designed to be a platform for bootcamp graduates to post helpful resources post graduation. This was the first relatively large scale full-stack application that I created as part of a team. The backend is entirely written in javascript using Express.js and Node to handle server side functions while using Mongoose as the object document mapper to act as middleware between the server and the database.",
@@ -30,8 +31,7 @@ const items = [
     deployedLink: "https://bootcamp-connect.herokuapp.com"
   },
   {
-    src:
-      "https://media.giphy.com/media/U6MOTCkUpOSpdnJjcL/giphy.gif",
+    src: FrontDorDemo,
     altText: "FrontDor",
     title: "FrontDor",
     description: "FrontDor is a real-time chat application built for small businesses to use for communciation between team members and with customers through sms. This application is also a MERN stack application that was built using feathers.js. A unique feature of this application is that it takes advantage of sockets for faster real-time transfer of information compared to the standard HTTP requests. ",
@@ -115,12 +115,16 @@ class PortfolioCarousel extends React.Component {
           key={item.src}
           value={i}
         >
-          <img
+          <video
             src={item.src}
             alt={item.altText}
             className="carouselImage"
-            onClick={this.toggle}
-          />
+            autoPlay
+            loop
+          >
+            <source src={item.src} type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
           <CarouselCaption captionHeader={item.caption} captionText={""}/>
         </CarouselItem>
       );
@@ -136,7 +140,7 @@ class PortfolioCarousel extends React.Component {
           activeIndex={activeIndex}
           next={this.next}
           previous={this.previous}
-          interval={20000}
+          interval={24000}
           ride="carousel"
         >
           <CarouselIndicators
