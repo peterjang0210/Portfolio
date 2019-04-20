@@ -5,7 +5,7 @@ const Links = props => (
   <Container>
     <Row>
       <Col>
-        <h3>Links</h3>
+        <h3 className="linksHeader">Links</h3>
         <div>
           <a href="https://github.com/peterjang0210" className="linkItem">
             Github <i className="fab fa-github" />

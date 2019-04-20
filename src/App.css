@@ -361,8 +361,35 @@ header {
     margin-bottom: 5px;
   }
 
-  span {
-    padding-left: 20px;
+  .Typist {
+    font-size: 30px !important;
+    width: 70%;
+  }
+
+  .headshot{
+    right: -10%;
+  }
+
+  .contactMe{
+    font-size: 15px;
+    padding-left: 10px;
+  }
+
+  .projectLinks{
+    padding-left: 0;
+    margin-right: 5px;
+  }
+
+  .deployedLink{
+    margin-left: 15px;
+  }
+
+  .linksHeader{
+    margin-left: 7px;
+  }
+
+  .projectHeader{
+    font-size: 38px;
   }
 }
 

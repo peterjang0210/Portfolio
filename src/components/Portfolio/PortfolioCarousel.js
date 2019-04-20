@@ -167,7 +167,7 @@ class PortfolioCarousel extends React.Component {
           <p>{this.state.projectDescription}</p>
           <p>{this.state.projectChallenge}</p>
           <a href={this.state.githubLink} className="projectLinks">Github <i className="fab fa-github" /></a>{" | "}
-          <a href={this.state.deployedLink} className="projectLinks">Deployed <i className="fas fa-mobile"></i></a>
+          <a href={this.state.deployedLink} className="projectLinks deployedLink">Live <i className="fas fa-mobile"></i></a>
         </div>
       </Container>
     );
