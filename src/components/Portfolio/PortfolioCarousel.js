@@ -121,6 +121,7 @@ class PortfolioCarousel extends React.Component {
             className="carouselImage"
             autoPlay
             loop
+            playsInline
           >
             <source src={item.src} type="video/mp4"/>
             Your browser does not support the video tag.
