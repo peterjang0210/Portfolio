@@ -17,7 +17,7 @@ const Links = props => (
           >
             LinkedIn <i className="fab fa-linkedin" />
           </a>
-          <a href={resume} className="linkItem" download>
+          <a href={resume} className="linkItem" download="peterjang_resume">
             Resume <i className="fas fa-file" />
           </a>
           <span className="contactMe">Contact Me: </span>
