@@ -296,6 +296,11 @@ header {
     font-size: 20px;
   }
 
+  .Typist {
+    font-size: 30px !important;
+    width: 70%;
+  }
+
   #aboutHeader {
     font-size: 30px;
   }
@@ -359,11 +364,6 @@ header {
 
   h3 {
     margin-bottom: 5px;
-  }
-
-  .Typist {
-    font-size: 30px !important;
-    width: 70%;
   }
 
   .headshot{

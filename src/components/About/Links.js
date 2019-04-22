@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import resume from "../../PeterJang_Resume.docx";
 
 const Links = props => (
   <Container>
@@ -16,7 +17,7 @@ const Links = props => (
           >
             LinkedIn <i className="fab fa-linkedin" />
           </a>
-          <a href="./images/56384733.jpg" className="linkItem">
+          <a href={resume} className="linkItem" download>
             Resume <i className="fas fa-file" />
           </a>
           <span className="contactMe">Contact Me: </span>
