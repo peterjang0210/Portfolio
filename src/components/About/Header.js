@@ -15,7 +15,7 @@ const Header = props => (
       </Typist></Media>
       </Media>
       <Media right>
-        <Media object src="https://media.licdn.com/dms/image/C4E03AQHAQr96HBXR9g/profile-displayphoto-shrink_100_100/0?e=1560384000&v=beta&t=9gs0l8RtZAybnQMNdBEEiQxFKd82sV-2_STNQaIP1ns" alt="headshot" className="headshot"/>
+        <Media object src="https://media.licdn.com/dms/image/C4E03AQGx11xZzZa9qg/profile-displayphoto-shrink_200_200/0?e=1561593600&v=beta&t=VG0e0mJldVxYqNPr2CiuqF_iG6axjgzwaoOmADG0U-k" alt="headshot" className="headshot"/>
       </Media>
     </Media>
   </Container>
