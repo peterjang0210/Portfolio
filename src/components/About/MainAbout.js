@@ -21,10 +21,8 @@ const MainAbout = function(props) {
         <Col md={{ size: 8 }}>
           <p>
             Hi! My name is Peter Jang. I currently live in the metro-Atlanta
-            area. I graduated from high school this past May as the
-            valedictorian of my class. I am currently on a gap year and will
-            enroll at Georgia Tech in the Fall with the major of Computer
-            Science.
+            area. I graduated from high school in 2018 as the
+            valedictorian of my class.
           </p>
           <p>
             As a full-stack web developer, I enjoy finding effective solutions
@@ -43,7 +41,7 @@ const MainAbout = function(props) {
             necessary tools for full-stack web development, including jQuery,
             React, Node, MySQL/Sequelize, MongoDB/Mongoose. I am looking to
             utilize these skills to continue growing as a developer through
-            building practical applications as well as classroom experience.
+            building practical applications.
           </p>
         </Col>
         <Col md={{ size: 4 }}>
