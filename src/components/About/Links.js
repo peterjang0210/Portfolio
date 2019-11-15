@@ -11,12 +11,6 @@ const Links = props => (
           <a href="https://github.com/peterjang0210" className="linkItem">
             Github <i className="fab fa-github" />
           </a>
-          <a
-            href="https://www.linkedin.com/in/peter-yoon-jang/"
-            className="linkItem"
-          >
-            LinkedIn <i className="fab fa-linkedin" />
-          </a>
           <a href={resume} className="linkItem" download="peterjang_resume">
             Resume <i className="fas fa-file" />
           </a>

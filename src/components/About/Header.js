@@ -1,6 +1,7 @@
 import React from "react";
 import Typist from "react-typist";
 import { Media, Container } from "reactstrap";
+import headshot from "../../../src/headshot.JPG";
 
 const Header = props => (
   <Container>
@@ -15,7 +16,7 @@ const Header = props => (
       </Typist></Media>
       </Media>
       <Media right>
-        <Media object src="https://media.licdn.com/dms/image/C4E03AQGx11xZzZa9qg/profile-displayphoto-shrink_200_200/0?e=1561593600&v=beta&t=VG0e0mJldVxYqNPr2CiuqF_iG6axjgzwaoOmADG0U-k" alt="headshot" className="headshot"/>
+        <Media object src={headshot} alt="headshot" className="headshot"/>
       </Media>
     </Media>
   </Container>
