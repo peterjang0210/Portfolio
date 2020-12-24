@@ -8,21 +8,21 @@ import {
   CardHeader,
   CardBody,
   ListGroup,
-  ListGroupItem
+  ListGroupItem,
 } from "reactstrap";
 
-const MainAbout = function(props) {
+const MainAbout = function (props) {
   const [displayFront, setDisplayFront] = useState(true);
 
   return (
     <Container>
-      <hr/>
+      <hr />
       <Row>
         <Col md={{ size: 8 }}>
           <p>
             Hi! My name is Peter Jang. I currently live in the metro-Atlanta
-            area. I graduated from high school in 2018 as the
-            valedictorian of my class.
+            area. I graduated from high school in 2018 as the valedictorian of
+            my class.
           </p>
           <p>
             As a full-stack web developer, I enjoy finding effective solutions
@@ -31,17 +31,19 @@ const MainAbout = function(props) {
             ability to bring dedication and energy to any project. I’ve found
             that going through the entire process of designing and developing
             web applications to solve a common problem gives me great
-            satisfaction and fulfillment.
+            satisfaction and enjoyment.
           </p>
           <p>
-            Being able to work effectively individually and as part of a team is
-            a skill that I am proud to be capable of. I am always eager to learn
-            new languages/frameworks/etc to find a more effective solution.
-            During my coding bootcamp at Georgia Tech, I was able to learn the
-            necessary tools for full-stack web development, including jQuery,
-            React, Node, MySQL/Sequelize, MongoDB/Mongoose. I am looking to
-            utilize these skills to continue growing as a developer through
-            building practical applications.
+            Being able to work effectively both individually and as part of a
+            team is a skill that I am proud to be capable of. I am always eager
+            to learn new languages/frameworks/etc to find a more effective
+            solution. During my coding bootcamp at Georgia Tech, I was able to
+            learn the necessary tools for full-stack web development, including
+            jQuery, React, Node, MySQL/Sequelize, MongoDB/Mongoose. I am looking
+            to utilize these skills to continue growing as a developer through
+            building practical applications. Currently, I am learning other
+            front end frameworks and libraries like Vue.js and Angular in
+            addition to object oriented languages like Java and C++.
           </p>
         </Col>
         <Col md={{ size: 4 }}>
@@ -134,7 +136,7 @@ const MainAbout = function(props) {
           )}
         </Col>
       </Row>
-      <hr/>
+      <hr />
     </Container>
   );
 };
