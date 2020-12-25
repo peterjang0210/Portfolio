@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://portfolio-3319f.web.app/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
